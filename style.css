@@ -1,5 +1,5 @@
 :root {
-  --yellow-text: #ff9900;
+  --orange-text: #ff9900;
   --primary-text: #7d7987;
   --border-color: #eceff2;
 }
@@ -9,11 +9,15 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
   font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -31,6 +35,8 @@ html {
 }
 
 .container__title {
+  font-family: "Inter", sans-serif;
+
   font-size: 4.9rem;
   font-weight: 400;
 
@@ -38,7 +44,7 @@ html {
   line-height: 5.6rem;
 }
 
-.container__title .yellow-text {
+.container__title .orange-text {
   font-weight: 700;
 }
 
@@ -47,8 +53,8 @@ html {
   color: var(--primary-text);
 }
 
-.yellow-text {
-  color: var(--yellow-text);
+.orange-text {
+  color: var(--orange-text);
 }
 
 .footer {
@@ -61,16 +67,18 @@ html {
   margin-top: 0.8rem;
 }
 
-.footer__social-media a {
-  text-decoration: underline;
-}
-
 .footer__social-media a:first-child {
-  margin-right: 3ch;
+  margin-right: 2.8rem;
 }
 
 .balls-decoration {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .balls-decoration {
+    display: none;
+  }
 }
